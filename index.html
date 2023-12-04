@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KANBAND BOARD</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17530c5d85.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
     <header>
         <div>
-            <button>ADD TO-DO</button>
+            <button class="btn-to-do">ADD TO-DO</button>
             <h1>KANBAND BOARD</h1>
             <img src="/IMG/miau.png" alt="">
         </div>
@@ -20,6 +21,22 @@
         <div id="to-do" class="box">
             <h2 class="to">TO-DO</h2>
         </div>
+
+        <!-- Modal to-do: -->
+        <div id="overlay" class="overlay"></div>
+        <div class="modal-to-do">
+            <div class="header-to-do">
+                <h2>TO-DO</h2>
+                <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="body-to-do">
+                <input class="input-to-do" id="input-to-do" type="text">
+                <button class="btn-add" id="btn-add" >ADD</button>
+            </div>
+        </div> 
+        <!-- fin del modal to-do -->
+
         <div id="doing" class="box">
             <h2 class="do">DOING</h2>
         </div>
@@ -35,6 +52,7 @@
        </p>
      </div>
     </footer>
-
+    <script src="js/modal-to-do.js"></script>
+    <script src="js/ask-to-do.js"></script>
 </body>
 </html>
