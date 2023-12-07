@@ -18,7 +18,7 @@
     </header>
   
     <main>
-        <div id="to-do" class="box">
+        <div id="to-do" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2 class="to">TO-DO</h2>
         </div>
 
@@ -37,10 +37,10 @@
         </div> 
         <!-- fin del modal to-do -->
 
-        <div id="doing" class="box">
+        <div id="doing" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2 class="do">DOING</h2>
         </div>
-        <div id="done" class="box">
+        <div id="done" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2 class="finish">DONE</h2>
         </div>
     </main>
@@ -54,5 +54,6 @@
     </footer>
     <script src="js/modal-to-do.js"></script>
     <script src="js/ask-to-do.js"></script>
+    <script src="js/drag_task.js"></script>
 </body>
 </html>

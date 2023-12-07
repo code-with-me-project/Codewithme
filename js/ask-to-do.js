@@ -19,9 +19,12 @@ addButton.addEventListener('click', ()=> {
             newDivWork.appendChild(textAsk);
             newDivWork.appendChild(deleteButton)
 
-            newDivWork.id= 'askDiv';
-            newDivWork.classList.add('askDiv')
+            newDivWork.id = 'askDiv' + taskCount;  
+            newDivWork.classList.add('askDiv');
             
+            newDivWork.draggable = true;
+            newDivWork.addEventListener('dragstart', dragStart);
+        
             taskCount++;
 
 
@@ -43,3 +46,6 @@ addButton.addEventListener('click', ()=> {
             alert('Por favor ingrese una tarea válida');
           }
         });
+
+
+
