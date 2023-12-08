@@ -31,12 +31,9 @@ header button{
     border-radius: 5px;
     background-color: #FF8999;
     color: #fff;
-    transition: all 0.2s ease-in-out; 
-
+    cursor: pointer;
 }
-button:hover {
-    transform: translateY(2px);
-  }
+
 header img{
     width: 40px;
 }
@@ -49,11 +46,10 @@ main{
 .box{
     margin-top: 3rem;
     background-color: #F1F2F4;
-    width: 26rem;
-    height: 35rem;
+    width: 23rem;
+    height: 31rem;
     border-radius: 10px;
     box-shadow: 3px 3px 20px 10px;
-
 }
 .box .to{
     padding-top: 1rem;
@@ -123,9 +119,11 @@ footer {
     background: #00839B;
     top: 15rem;
     display: none;
+    border-radius: .6rem;
 }
 
 .header-to-do{
+    border-radius: .6rem .6rem 0 0;
     display: flex;
     width: 100%;
     background: #F1F2F4;
@@ -141,6 +139,7 @@ footer {
 .header-to-do > .btn-close{
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .header-to-do > .btn-close > i{
@@ -148,20 +147,29 @@ footer {
 }
 
 .body-to-do{
+    color: rgb(40, 37, 37);
     display: flex;
-    align-items: center;
-    padding: 3rem 3rem;
+    /* align-items: center; */
+    padding: 2rem 3rem;
     flex-direction: column;
 }
+
 .input-to-do {
-    width: 80%;
-    height: 3rem;
+    /* width: 80%; */
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: none;
 }
 
 .btn-add{
-    padding: 0.5rem 3rem;
-    font-size: 24px;
+    margin-left: 13rem;
+    width: 30%;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
     margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
 }
 
 .askDiv{
@@ -169,6 +177,7 @@ footer {
     width: 95%;
     background: #00839B;
     margin-top: 2rem;
+    margin-left: .5rem;
     border-radius: 5px;
     padding: 0.5rem;
     justify-content: space-between;
@@ -188,6 +197,29 @@ footer {
     background:#FF8999;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Fin de los estilos del modal y div de tareas */
+
+/* ------------------------------------------------------@media querys ------------------------------------------ */
+@media (max-width:1279px){
+    main{
+        flex-wrap: wrap;
+        gap: 2rem ;
+        height: 100vh;
+       
+    }
+    .box{
+        width: 28rem;
+        height: auto; 
+    }
+    .done{
+        width: 58.1rem;
+        margin: 0;
+        padding: 0;
+    }
+   
+  
+
+}
