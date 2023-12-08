@@ -154,7 +154,7 @@ footer {
     flex-direction: column;
 }
 
-.input-to-do {
+.input-to-do, .inp-tittle {
     /* width: 80%; */
     height: 2.5rem;
     border-radius: .5rem;
@@ -187,6 +187,10 @@ footer {
     font-size: 22px;
     color: #F1F2F4;
     overflow: hidden;
+}
+
+.askDiv > h3{
+    color: #004c67;
 }
 
 .askDiv > .delete-button{
