@@ -46,8 +46,8 @@ main{
 .box{
     margin-top: 3rem;
     background-color: #F1F2F4;
-    width: 26rem;
-    height: 35rem;
+    width: 23rem;
+    height: 31rem;
     border-radius: 10px;
     box-shadow: 3px 3px 20px 10px;
 }
@@ -153,6 +153,7 @@ footer {
     padding: 2rem 3rem;
     flex-direction: column;
 }
+
 .input-to-do {
     /* width: 80%; */
     height: 2.5rem;
@@ -200,3 +201,25 @@ footer {
 }
 
 /* Fin de los estilos del modal y div de tareas */
+
+/* ------------------------------------------------------@media querys ------------------------------------------ */
+@media (max-width:1279px){
+    main{
+        flex-wrap: wrap;
+        gap: 2rem ;
+        height: 100vh;
+       
+    }
+    .box{
+        width: 28rem;
+        height: auto; 
+    }
+    .done{
+        width: 58.1rem;
+        margin: 0;
+        padding: 0;
+    }
+   
+  
+
+}
