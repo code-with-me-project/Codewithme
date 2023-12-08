@@ -1,14 +1,20 @@
 const inputToDo= document.getElementById('input-to-do');
 const addButton= document.getElementById('btn-add');
+const inpTittle= document.getElementById('inp-tittle');
 const contToDo= document.getElementById('to-do');
 let taskCount= 0;
 
 addButton.addEventListener('click', ()=> {
     if (inputToDo.value.trim() !== ''){ //Esta condición es para ver si el input no está vacío
         if(taskCount < 5) { 
+
             let taskInput= inputToDo.value;
             let newDivWork= document.createElement('div');
             let textAsk= document.createElement('p');
+            let tittleTask= document.createElement('h3');
+
+            tittleTask.textContent= inpTittle.value.toUpperCase();
+
             textAsk.textContent= taskInput;
 
             let deleteButton = document.createElement('button');
@@ -17,7 +23,8 @@ addButton.addEventListener('click', ()=> {
 
             contToDo.appendChild(newDivWork);
             newDivWork.appendChild(textAsk);
-            newDivWork.appendChild(deleteButton)
+            newDivWork.appendChild(tittleTask);
+            newDivWork.appendChild(deleteButton);
 
             newDivWork.id = 'askDiv' + taskCount;  
             newDivWork.classList.add('askDiv');
@@ -29,6 +36,7 @@ addButton.addEventListener('click', ()=> {
 
 
             inputToDo.value= '';
+            inpTittle.value= '';
 
             if (taskCount === 5) {
                 addButton.disabled= true; 
@@ -45,7 +53,5 @@ addButton.addEventListener('click', ()=> {
           } else {
             alert('Por favor ingrese una tarea válida');
           }
-        });
-
-
+});
 
